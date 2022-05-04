@@ -2,12 +2,12 @@
 #el interés porcentual anual y el número de años, y muestre por pantalla el capital obtenido en la 
 #inversión redondeado a dos decimales.
 
-inv=int(input("ingrese el monto de dinero a invertir: "))
-intanual=float(input("ingrese la tasa interes porcentual anual: "))
-years=int(input("ingrese la cantidad de años que desea invertir: "))
+inv=int(input("ingrese su inversion inicial: "))
+intanual=float(input("ingrese la tasa de interes porcentual anual: "))
+years=int(input("ingrese el plazo en años de su inversion: "))
 
+final_cap=inv*((intanual/100)+1)*years
+final_cap=round(final_cap,2)
+final_cap=str(final_cap)
 
-capital_final=inv*((intanual/100)+1)*years
-capital_final=round(capital_final,2)
-capital_final=str(capital_final)
-print("el capital obtenido en la inversion es: "+capital_final)
+print("el capital total estimado es: "+final_cap)

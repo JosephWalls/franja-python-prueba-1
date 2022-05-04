@@ -4,18 +4,18 @@
 #que no son del día. Después tu programa debe mostrar el precio habitual de una barra de pan, 
 #el descuento que se le hace por no ser fresca y el coste final total
 
-precio_pan=3.49
+price=3.49
 dscto=0.6
 
-pan_vendido=int(input("ingrese cuantas barras de pan que no son del dia se han vendido: "))
-cargo=pan_vendido*precio_pan
-cargo=str(cargo)
-precio_panstr=str(precio_pan)
-print("El precio habitual de una barra de pan es: "+precio_panstr)
+sellings=int(input("Ingrese cuantas barras de pan vendidas no son del día: "))
+charge=sellings*price
+charge=str(round(charge,2))
+pricestr=str(price)
+print("El precio habitual de una barra de pan es: "+pricestr)
 dsctostr=str(dscto)
-print("el descuento aplicado para pan que no es del dia es: "+dsctostr)
-precio_final=(precio_pan*dscto)*pan_vendido
-precio_final=str(precio_final)
-pan=str(pan_vendido)
-print("el valor habitual por "+pan+" barra de pan seria "+cargo)
-print("el valor por "+pan+" barras de pan que no son del dia es: "+precio_final)
+print("El descuento que se le hace por no ser fresco: "+dsctostr)
+final_price=(price*dscto)*sellings
+final_price=str(round(final_price,2))
+bread=str(sellings)
+print("El precio habitual seria: "+charge)
+print("El coste final total es: "+final_price)
